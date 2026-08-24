@@ -1,0 +1,1 @@
+DROP POLICY IF EXISTS "Servants update scoped works" ON public.works;

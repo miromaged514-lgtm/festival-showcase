@@ -1,0 +1,2 @@
+CREATE POLICY "Servants delete any work" ON public.works FOR DELETE USING (public.has_role(auth.uid(), 'servant'));
+CREATE POLICY "Servants delete any comment" ON public.comments FOR DELETE USING (public.has_role(auth.uid(), 'servant'));
